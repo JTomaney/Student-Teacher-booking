@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import { Route, Switch } from "react-router-dom";
 
 import LandingPage from "../../components/LandingPage/LandingPage";
+import Student from "../Student/Student";
 
 export class Layout extends Component {
   state = {
@@ -10,7 +12,12 @@ export class Layout extends Component {
   };
 
   render() {
-    return <LandingPage />;
+    return (
+      <Switch>
+        <Route path="/student" component={Student} />
+        <Route path="/" component={LandingPage} />
+      </Switch>
+    );
   }
 }
 

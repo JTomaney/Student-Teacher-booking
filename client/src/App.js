@@ -1,10 +1,15 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Layout from "./containers/Layout/Layout";
 
 function App() {
-  return <Layout />;
+  return (
+    <Router>
+      <Layout />
+    </Router>
+  );
 }
 
 export default App;
