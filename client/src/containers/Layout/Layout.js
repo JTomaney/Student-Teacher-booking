@@ -8,7 +8,25 @@ export class Layout extends Component {
   state = {
     signedIn: false,
     key: null,
-    appointments: {}
+    appointments: [
+      {
+        appointment1: {
+          name: "Budgie",
+          time: 3,
+          email: "budgie@jbrules.com"
+        },
+        appointment2: {
+          name: "Budgie",
+          time: 3,
+          email: "budgie@jbrules.com"
+        },
+        appointment3: {
+          name: "Budgie",
+          time: 3,
+          email: "budgie@jbrules.com"
+        }
+      }
+    ]
   };
 
   render() {
