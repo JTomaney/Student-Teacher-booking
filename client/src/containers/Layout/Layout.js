@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import LandingPage from "../../components/LandingPage/LandingPage";
 import Student from "../Student/Student";
+import { TimeTable } from "../TimeTable/TimeTable";
 
 export class Layout extends Component {
   state = {
@@ -33,6 +34,7 @@ export class Layout extends Component {
     return (
       <Switch>
         <Route path="/student" component={Student} />
+        <Route path="/table" component={TimeTable}/>
         <Route path="/" component={LandingPage} />
       </Switch>
     );
