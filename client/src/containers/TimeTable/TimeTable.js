@@ -9,6 +9,12 @@ export class TimeTable extends Component {
   render() {
    
     return (
+      <div>
+      <div className="tutor_header">
+        <img className="tutor_image"></img>
+        <h1 className="tutor_timetable_header" scr="../public/avatar-3.png">Book a one-to-one with Rhys</h1>
+
+      </div>
         <div className="calendar">
         <div className="month-indicator">
           <time datetime="2019-01"> January 2019 </time>
@@ -108,6 +114,7 @@ export class TimeTable extends Component {
             <time datetime="2019-02-28">28</time>
           </button>
         </div>
+      </div>
       </div>
     );
   };

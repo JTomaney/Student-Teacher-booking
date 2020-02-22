@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+/* tutor timetable header */
+.tutor_header{
+  background-color: #F1F1F1;
+  text-align: center;
+}
+
+.tutor_timetable_header{
+  vertical-align: middle;
+  padding-bottom: 2rem;
+  color: #6290C3;
+}
+
 
 /* TimeTable css */
 .calendar{
